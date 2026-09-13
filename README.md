@@ -37,8 +37,7 @@ We skip UPR because the coordinates are bogus.
 ## Known caveats
 * This is all dependent on the sensor map and the frequency at which it is pulling new data in. It pulls in new data every 15 minutes, but new metadata every day, so there is a +/- to the dataset count each day.
 * There could be duplicates in the RA, NDBC, and CDIP layers. I've tried to catch all the edge cases, but there could be more.
-* This represents the last **month** of **wave** observations from the sensor map and HFRnet.
-* For the RA layer, these are stations that are **not** CDIP or NDBC, this might mean that they are other agencies data (eg. USGS). I made a big bucket for RA stations, but it is really RA and other stations.
-* The Asset Inventory layer is self reported every calendar year. So, we are presenting the most recent calendar year wave assets. There is expected duplicates with what is in the sensor map. That is okay.
+* This represents the last **month** of **wave** observations from the sensor map and HFRnet. 
+* The Asset Inventory layer is self reported every calendar year. So, we are presenting the most recent calendar year wave assets. There are expected duplicates with what is in the sensor map. That is okay.
 * Sensor map might not capture all of the stations from CDIP, NDBC, and RAs. So, these numbers should be used as rough approximations.
-* The script to generate the map and metrics is either ran monthly or on-demand. Check revision history for when the last data capture was ran.
+* The script to generate the map and metrics is either run monthly or on-demand. Check revision history for when the last data capture was run.
